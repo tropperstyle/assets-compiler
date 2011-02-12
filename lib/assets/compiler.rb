@@ -14,7 +14,7 @@ module Assets
 				compilers << Base.create(key, paths)
 			end
 
-			Plugin::Rails.extend! if defined?(RAILS_GEM_VERSION) && config[:check_frequency] == :every_request
+			Plugin::Rails.extend! if defined?(RAILS_GEM_VERSION) && config[:always_check]
 
 			compile!
 		end
