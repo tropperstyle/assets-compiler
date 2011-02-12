@@ -5,8 +5,8 @@ module Assets
 		attr_accessor :config, :compilers
 
 		DEFAULTS = {
+			:compilers => {}
 			:always_check => false,
-			:compilers = {}
 		}
 
 		def init!(options)
