@@ -4,7 +4,10 @@ module Assets
 
 		attr_accessor :config, :compilers
 
-		DEFAULTS = {}
+		DEFAULTS = {
+			:always_check => false,
+			:compilers = {}
+		}
 
 		def init!(options)
 			self.config = options.reverse_merge(DEFAULTS)
