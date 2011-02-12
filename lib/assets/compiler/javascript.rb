@@ -1,3 +1,5 @@
+require 'closure-compiler'
+
 module Assets
 	module Compiler
 		class Javascript < Base
