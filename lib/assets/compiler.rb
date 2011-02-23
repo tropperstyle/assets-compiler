@@ -1,8 +1,8 @@
-require 'compiler/checker'
-require 'compiler/base'
-require 'compiler/javascript'
-require 'compiler/plugin/rack'
-require 'compiler/plugin/rails'
+require 'assets/compiler/checker'
+require 'assets/compiler/base'
+require 'assets/compiler/javascript'
+require 'assets/compiler/plugin/rack'
+require 'assets/compiler/plugin/rails'
 
 module Assets
 	module Compiler
