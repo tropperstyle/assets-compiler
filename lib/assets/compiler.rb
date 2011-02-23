@@ -1,3 +1,9 @@
+require 'compiler/checker'
+require 'compiler/base'
+require 'compiler/javascript'
+require 'compiler/plugin/rack'
+require 'compiler/plugin/rails'
+
 module Assets
 	module Compiler
 		extend self
