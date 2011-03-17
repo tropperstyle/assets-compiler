@@ -8,7 +8,7 @@ module Assets
           # Rails >= 3.0
           if defined?(ActionController::Metal)
             require 'assets/compiler/plugin/rack'
-            Rails.configuration.middleware.use(Assets::Compiler::Plugin::Rack)
+            ::Rails::Application.config.middleware.use(Assets::Compiler::Plugin::Rack)
 
           # Rails >= 2.3
           elsif defined?(ActionController::Dispatcher) && defined?(ActionController::Dispatcher.middleware)
