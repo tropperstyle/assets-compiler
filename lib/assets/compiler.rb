@@ -23,7 +23,7 @@ module Assets
 				compilers << Base.create(key, paths)
 			end
 
-			Plugin::Rails.extend! if defined?(RAILS_GEM_VERSION) && config[:always_check]
+			Plugin::Rails.extend! if defined?(Rails) && config[:always_check]
 
 			compile!
 		end
